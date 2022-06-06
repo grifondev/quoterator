@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bold_font.ttf">
+            <string>WeLoveMomPersonalUseOnly</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coursework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient_frame" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-kS-gdy">
+                                <rect key="frame" x="-17" y="-54" width="448" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wz4-3n-uPR">
+                                <rect key="frame" x="77" y="30" width="260" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="VsD-g4-Yba">
+                                <rect key="frame" x="-13" y="445" width="427" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22n-fD-I7h">
+                                <rect key="frame" x="91" y="495" width="233" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="JXi-hD-tpF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WeLoveMomPersonalUseOnly" family="We Love Mom - Personal Use Only" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.36067341549295778" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_photo" translatesAutoresizingMaskIntoConstraints="NO" id="r7t-Sq-ui1">
+                                <rect key="frame" x="70" y="129" width="272" height="304"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="Gg4-JI-yGr">
+                                <rect key="frame" x="82" y="152" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="N8X-9b-LpN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBa-wN-9Uz">
+                                <rect key="frame" x="142" y="761.5" width="128" height="45"/>
+                                <fontDescription key="fontDescription" name="WeLoveMomPersonalUseOnly" family="We Love Mom - Personal Use Only" pointSize="32"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="change quote">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8t-bR-how"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gg4-JI-yGr" firstAttribute="centerX" secondItem="PBa-wN-9Uz" secondAttribute="centerX" constant="1" id="38U-33-lsz"/>
+                            <constraint firstItem="22n-fD-I7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="5aM-bC-497"/>
+                            <constraint firstItem="22n-fD-I7h" firstAttribute="top" secondItem="r7t-Sq-ui1" secondAttribute="bottom" constant="62" id="GCf-Eh-hcD"/>
+                            <constraint firstItem="Gg4-JI-yGr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="108" id="IRE-CL-qt1"/>
+                            <constraint firstItem="r7t-Sq-ui1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Lui-yX-vlY"/>
+                            <constraint firstItem="r7t-Sq-ui1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="QrB-GM-O0G"/>
+                            <constraint firstItem="PBa-wN-9Uz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="hio-W0-oCS"/>
+                            <constraint firstAttribute="bottom" secondItem="22n-fD-I7h" secondAttribute="bottom" constant="286" id="kId-pR-a65"/>
+                            <constraint firstItem="22n-fD-I7h" firstAttribute="centerX" secondItem="r7t-Sq-ui1" secondAttribute="centerX" constant="1.5" id="otJ-Wk-clE"/>
+                            <constraint firstItem="22n-fD-I7h" firstAttribute="centerX" secondItem="Gg4-JI-yGr" secondAttribute="centerX" constant="0.5" id="rFg-tG-FIL"/>
+                            <constraint firstItem="PBa-wN-9Uz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="336" id="rZK-uW-GzU"/>
+                            <constraint firstItem="Gg4-JI-yGr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="yjO-h3-4qS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageContent" destination="Gg4-JI-yGr" id="49N-ve-8gY"/>
+                        <outlet property="textQuote" destination="22n-fD-I7h" id="4av-qt-Sf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frame" width="738" height="387"/>
+        <image name="frame_photo" width="577" height="592"/>
+        <image name="gradient_frame" width="400" height="800"/>
+        <image name="logo" width="478" height="128"/>
+        <image name="red" width="600" height="600"/>
+    </resources>
+</document>
